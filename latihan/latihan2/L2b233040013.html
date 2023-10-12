@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 2 Form + Tabel</title>
+  </head>
+  <body>
+    <tbody>
+      <table border="1" cellspacing="0" cellpadding="10">
+        <form>
+          <tr>
+            <th colspan="3" bgcolor="grey">INPUT DATA MAHASISWA</th>
+          </tr>
+          <td>Username</td>
+          <td>:</td>
+          <td>
+            <input type="text" name="username" />
+          </td>
+          <tr>
+            <td>Password</td>
+            <td>:</td>
+            <td><input type="password" name="password" /></td>
+          </tr>
+          <tr>
+            <td>Fullname</td>
+            <td>:</td>
+            <td><input type="text" name="fullname" /></td>
+          </tr>
+          <tr>
+            <td>E-mail</td>
+            <td>:</td>
+            <td><input type="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td>Agama</td>
+            <td>:</td>
+            <td>
+              <select name="agama">
+                <option name="agama" selected>--Pilih Agama--</option>
+                <option name="islam">Islam</option>
+                <option name="kristen">Kristen</option>
+                <option name="hindu">Hindu</option>
+                <option name="buddha">Buddha</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td><input type="radio" name="jenisKel" value="pria" />Laki-laki <input type="radio" name="jenisKel" value="perempuan" />Perempuan</td>
+          </tr>
+          <tr>
+            <td>Hobi</td>
+            <td>:</td>
+            <td>
+              <input type="checkbox" name="hobi" value="musik" />Musik <input type="checkbox" name="hobi" value="olahraga" />Olahraga <input type="checkbox" name="hobi" value="gaming" />Gaming
+              <input type="checkbox" name="hobi" value="lainnya" />Lainnya
+            </td>
+          </tr>
+          <tr>
+            <td>Profile Singkat</td>
+            <td>:</td>
+            <td><textarea name="komentar" cols="50" rows="5"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="3" align="right">
+              <input type="submit" name="submit" value="Input" />
+            </td>
+          </tr>
+        </form>
+      </table>
+    </tbody>
+  </body>
+</html>
