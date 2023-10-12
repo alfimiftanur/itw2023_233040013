@@ -1,0 +1,41 @@
+body {
+  content: "";
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-image: url(img/background.jpg);
+}
+h1 {
+  font-family: "Comic Sans MS";
+  font-size: 60px;
+  text-align: center;
+  color: darkblue;
+}
+h3 {
+  text-align: center;
+}
+.nama1 {
+  color: white;
+}
+.nama1:hover {
+  color: red;
+  text-decoration: none;
+}
+.nama2 {
+  text-decoration: none;
+  font-weight: bold;
+}
+.nama2:hover {
+  color: white;
+  background-color: blue;
+}
+
+h4 {
+  text-align: center;
+  font-style: italic;
+}
+.pertama {
+  text-align: center;
+  color: goldenrod;
+}
+.kedua {
+  text-align: right;
+}
