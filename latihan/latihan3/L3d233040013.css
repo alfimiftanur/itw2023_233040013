@@ -2,6 +2,10 @@ body {
   content: "";
   font-family: Georgia, "Times New Roman", Times, serif;
   background-image: url(img/background.jpg);
+<<<<<<< HEAD
+=======
+  background-size: 100%;
+>>>>>>> 9eb6bd3d8ab033f384d90b72826e2c9a1d2cfa3f
 }
 h1 {
   font-family: "Comic Sans MS";
