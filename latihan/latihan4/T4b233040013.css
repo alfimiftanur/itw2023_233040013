@@ -1,45 +1,126 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* style */
@@ -90,7 +171,6 @@ body {
   color: white;
 }
 
-
 .hero {
   margin-left: 50px;
   height: 462px;
@@ -106,15 +186,16 @@ body {
 .content {
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 25px; 
+  padding-bottom: 25px;
 }
 
 .content .penulis {
   padding-bottom: 10px;
   font-size: 16px;
+  font-family: "open_sansbold";
 }
 
-.content .penulis a{
+.content .penulis a {
   text-decoration: none;
   color: #000;
 }
@@ -132,7 +213,7 @@ body {
   border-bottom: 5px solid lightskyblue;
 }
 
-.content p b{
+.content p b {
   font-weight: bold;
 }
 
@@ -147,14 +228,12 @@ body {
   font-size: 14px;
 }
 
-.footer a{
+.footer a {
   text-decoration: none;
   color: #eaeaea;
 }
 
 @font-face {
-  font-family: "open_sansbold";
-  src: url("OpenSans-Bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "open_sansregular";
+  src: url(../latihan4/assets/OpenSans-Regular-webfont.woff) format("regular");
 }
