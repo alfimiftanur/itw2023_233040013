@@ -1,0 +1,213 @@
+body{
+  background-color: #888;
+  font-family: "popinsmedium", sans-serif;
+}
+
+.top h2 {
+  padding: 15px;
+  font-size: 50px;
+  background-color:#1877f2;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'kingthings_calligraphica_2Rg';
+  color: white;
+  text-shadow: 1px 1px 3px black, 0 0 15px #333;
+}
+.judul h2{
+  margin: 15px ;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 7px blue, 0 0 7px darkblue;
+}
+
+.container{
+  /* height: auto; */
+  width: 600px;
+  margin: auto;
+  padding: 25px 5px 15px 85px;
+  border-radius: 5px;
+  background-color: #ddd;
+  box-shadow: 0 0 7px #1877f2;
+}
+.gallery li{
+  width: 120px;
+  height: 120px;
+  border: 2px solid #666;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.gallery li span {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(200, 200, 200, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: #333;
+  text-shadow: 1px 1px 1px #ddd;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.7s;
+}
+
+.gallery li a:hover span {
+  opacity: 1;
+  transform: scale(1) ;
+}
+
+
+.clear {
+  clear: both;
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 99999;
+  transition: 0.8s;
+  text-align: center;
+}
+
+.overlay img{
+  box-shadow: 2px 2px 7px rgba(0,0,0,0.7);
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  animation: fade .5s;
+}
+
+.overlay .close {
+  position: absolute;
+  right: 10px;
+  top: 70px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+}
+
+.overlay .text{
+  color: white;
+  width: 460px;
+  opacity: 1;
+  background-color: transparent; 
+  font-size: 18px;
+  top:400px;
+  left: 20px;
+  font-family: 'cascadia_coderegular';
+  line-height: normal; 
+  text-align: start;
+  transform: translateZ(0) scale(1);
+  transition: all 0.3s ease-in-out;
+  text-shadow: none;
+}
+
+.overlay .close:hover {
+  opacity: 1;
+}
+.overlay .close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #ff000f;
+}
+.overlay .close:before {
+  transform: rotate(45deg);
+}
+.overlay .close:after {
+  transform: rotate(-45deg);
+}
+
+/* navigasi */
+.previous,.next{
+  padding: 10px 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: 'cascadia_coderegular';
+  letter-spacing: 2px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: all .3s ease-in-out;
+  }
+
+.next{
+  margin-left:50px;
+}
+
+.previous{
+  margin-right:50px;
+}
+  
+.footer p{
+  margin-top: 50px;
+  background-color: #1877f2;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  /* color: black; */
+}
+
+.footer a {
+  text-decoration: none;
+  /* color: black; */
+}
+
+.footer p,a {
+  color: white;
+}
+
+/* transisi */
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+/* font generaotor */
+
+@font-face {
+  font-family: 'poppinsmedium';
+  src: url('poppins-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'cascadia_coderegular';
+  src:url('cascadia-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kingthings_calligraphica_2Rg';
+  src: url('Kingthings_Calligraphica_2-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
